@@ -2,7 +2,7 @@
 ###
  # @Author: 【闲鱼】混吃等死真君 【Github】Bytequestor
  # @Date: 2024-11-25 12:35:27
- # @LastEditTime: 2024-11-25 16:28:54
+ # @LastEditTime: 2024-11-25 16:33:43
  # @FilePath: \shell-learn\toGPmall\toGPmall.sh
  # @Description: 
  # 
@@ -98,7 +98,7 @@ tar -zxvf gpmall/dist.tar -C /usr/share/nginx/html/
 
 systemctl enable --now nginx
 # 后端
-# 探针启动
+# 探针启动【有问题，这些服务还需要手工运行才可以】
 nohup java -jar /root/gpmall/shopping-provider-0.0.1-SNAPSHOT.jar & 
 nohup java -jar /root/gpmall/user-provider-0.0.1-SNAPSHOT.jar & 
 nohup java -jar /root/gpmall/gpmall-shopping-0.0.1-SNAPSHOT.jar & 
